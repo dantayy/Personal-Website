@@ -1,0 +1,39 @@
+body{
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: 'Arbutus Slab', serif;
+    color: white;
+}
+h1,h2{
+    font-family: 'Seaweed Script', cursive;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: lightgrey;
+}
+a:active{
+    color: white;
+}
+.row{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+img{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+nav{
+    background-color: rgba(0,0,0,0.2);
+    text-align: left;
+}
+#tab{
+    float: right;
+}
