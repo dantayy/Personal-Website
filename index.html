@@ -14,6 +14,7 @@
         <!-- Bootstrap
         -------------------------------------------------- -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         
         <!-- Custom CSS & fonts
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->        
@@ -21,85 +22,87 @@
         <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Seaweed+Script" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="main col-10">
-                    <div id="title" class="row">
-                        <img class="col-12" src="images/logoTransparent.png">
-                        <h1 class="col-12">Big Ol Title Goes Here</h1>
-                    </div>
-                    <div id="mission_statement" class="row">
-                        <div class="col-7">
-                            <p>Hi there!  I'm Nick, an aspiring game designer who wishes to specialize in level design. Gaming's been a part of my life for as long as I can remember, and I've always wanted to give back to the industry that's given so much to me.  Seeing as how I've always been proficient in math and science I decided pursuing a specialized degree in programming was the best way to achieve that goal and so now I'm here at the Rochester Institute of Technology. I've dabbled with basic coding in the past, but I'm learning more advanced things as you read this, and hope to have multiple functional games by the end of my time here.</p>
-                            <p>At the moment I'm looking for a Summer 2018 co-op in the Game Design/Software Engineering/Web Development fields.  Below is a collection of projects I've worked on pertaining to those fields, as well as some contact info.  No matter how or why you ended up here, I hope you'll find something that piques your interest!</p>
+        <div class="wrapper">
+            <nav id="collapseableNav">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#mission_statement">Mission Statement</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>                 
+                </ul>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="main col-12">
+                        <a id="navButton" href="#collapseableNav"><img src="images/tab.png" width="50px" height="50px"></a>
+                        <div id="title" class="row">
+                            <img class="col-12" src="images/logoTransparent.png">
+                            <h1 class="col-12">Playing hard by working hard.</h1>
                         </div>
-                        <div class="col-5">
-                            <img class="img-fluid" src="images/myFace.jpg" alt="my face">
-                        </div>
-                    </div>
-                    <div id="projects">
-                        <div class="row">
+                        <div id="mission_statement" class="row">
                             <div class="col-7">
-                                <h2>QuoteFault</h2>
-                                <p>Built a quote-submission service for the CSH weekly newsletter using Python packages such as Flask as well as a MySQL database.  This was my first major personal coding project and it's currently being used by over 100 active members within the organization.  It's still a work in progress, with multiple future improvements in the pipeline, as well as contributions from other members.</p>
+                                <p>Hi there!  I'm Nick, an aspiring game designer who wishes to specialize in level design. Gaming's been a part of my life for as long as I can remember, and I've always wanted to give back to the industry that's given so much to me.  Seeing as how I've always been proficient in math and science I decided pursuing a specialized degree in programming was the best way to achieve that goal and so now I'm here at the Rochester Institute of Technology. I've dabbled with basic coding in the past, but I'm learning more advanced things as you read this, and hope to have multiple functional games by the end of my time here.</p>
+                                <p>At the moment I'm looking for a Summer 2018 co-op in the Game Design/Software Engineering/Web Development fields.  Below is a collection of projects I've worked on pertaining to those fields, as well as some contact info.  No matter how or why you ended up here, I hope you'll find something that piques your interest!</p>
                             </div>
                             <div class="col-5">
-                                <img class="img-fluid" src="images/quotefault.png" alt="Quotefault in action">
+                                <img class="img-fluid" src="images/myFace.jpg" alt="my face">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">
-                                <h2>Sonagraphic</h2>                                
-                                <p>The idea for this game prototype came from the recurring thought of mine that my gaming music playlist should be more integrated into the games i was playing somehow.  The hope is that by the end of the semester I'll be able to let the player grab music/audio from any video on YouTube (ala AudioShield) and then be dropped into an FPS arena with waves of enemies coming at them that take damage based on how in-tune the player is making their shots with the music being played (ala Harmonix's cancelled Chroma).  Further down the line I'd like to stylize it to look cartoonishly gory (ala Kingsman).  As of right now I'm learning C++ so I can code the algorithms I need to in Unreal 4 to get things running, as well as reseaching sound processing.</p>
+                        <div id="projects">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2>QuoteFault</h2>
+                                    <p>Over the course of roughly one Spring semester, I built a quote-submission service for the CSH weekly newsletter using Python packages such as Flask as well as a MySQL database.  This was my first major personal coding project and it's currently being used by over 100 active members within the organization.  It's still a work in progress, with multiple future improvements in the pipeline, as well as contributions from other members.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="img-fluid" src="images/quotefault.png" alt="Quotefault in action">
+                                </div>
                             </div>
-                            <div class="col-5">
-                                <img class="img-fluid" src="images/audioshield.png" alt="ref images for Sonagraphic">
-                                <img class="img-fluid" src="images/chroma.jpg" alt="ref images for Sonagraphic">
-                                <img class="img-fluid" src="images/kingsman.jpg" alt="ref images for Sonagraphic">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2>Sonagraphic</h2>                                
+                                    <p>The idea for this game prototype came from the recurring thought of mine that my gaming music playlist should be more integrated into the games i was playing somehow.  The hope is that by the end of the semester I'll be able to let the player grab music/audio from any video on YouTube (ala AudioShield) and then be dropped into an FPS arena with waves of enemies coming at them that take damage based on how in-tune the player is making their shots with the music being played (ala Harmonix's cancelled Chroma).  Further down the line I'd like to stylize it to look cartoonishly gory (ala Kingsman).  As of right now I'm learning C++ so I can code the algorithms I need to in Unreal 4 to get things running, as well as reseaching sound processing.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="img-fluid" src="images/audioshield.png" alt="ref images for Sonagraphic">
+                                    <img class="img-fluid" src="images/chroma.jpg" alt="ref images for Sonagraphic">
+                                    <img class="img-fluid" src="images/kingsman.jpg" alt="ref images for Sonagraphic">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2>Web Development</h2>
+                                    <p>In addition to my work on Quotefault, over the past semester I've done a lot of smaller web-dev projects to cement my understanding of the skills.  Most of that work can be found at my <a href="https://people.rit.edu/nvm6501/230/">people.rit.edu</a> page, and although I'd consider a lot of it to be rough around the edges, those projects helped me become confident enough in myself to put together the site you see before you today.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="img-fluid" src="images/webDev.png" alt="some of my work with HTML5/CSS3/ES6">
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">
-                                <h2>Web Development</h2>
-                                <p>In addition to my work on Quotefault, over the past semester I've done a lot of smaller web-dev projects to cement my understanding of the skills.  Most of that work can be found at my <a href="https://people.rit.edu/nvm6501/230/">people.rit.edu</a> page, and although I'd consider a lot of it to be rough around the edges, those projects helped me become confident enough in myself to put together the site you see before you today.</p>
-                            </div>
-                            <div class="col-5">
-                                <img class="img-fluid" src="images/webDev.png" alt="some of my work with HTML5/CSS3/ES6">
-                            </div>
+                        <div id="contact">
+                            <h2>Contact Info</h2>
+                            <p>Wanna learn more about me?  Here are some useful links</p>
+                            <ul>
+                                <li><a href="https://github.com/dantayy">Github</a></li>
+                                <li><a href="https://www.linkedin.com/in/nicholas-mercadante/">Linkedin</a></li>
+                                <li><a href="docs/Nicholas%20Mercadante%20Resume%20December%202017.docx.pdf">Resume</a></li>
+                                <li><a href="mailto:nvm6501@rit.edu">Email Me Directly!</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div id="contact">
-                        <h2>Contact Info</h2>
-                        <p>Wanna learn more about me?  Here are some useful links</p>
-                        <ul>
-                            <li><a href="https://github.com/dantayy">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/nicholas-mercadante/">Linkedin</a></li>
-                            <li><a href="docs/Nicholas%20Mercadante%20Resume%20December%202017.docx.pdf">Resume</a></li>
-                            <li>Email: nvm6501@rit.edu</li>
-                            <li>Phone: 609-610-3439</li>
-                        </ul>
                     </div>
                 </div>
-                <div class="nav col-2">
-                    <nav>
+                <div class="row">
+                    <footer class="col-12">
+                        <header>Resources</header>
                         <ul>
-                            <li><a href="#mission_statement">Mission Statement</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>                 
+                            <li><a href="http://www.publicdomainpictures.net/view-image.php?image=230272&picture=impressionist-beach-sunset">Sunset Background</a></li>
+                            <li><a href="https://arstechnica.com/gaming/2016/01/vr-games-audioshield-hover-junkers-lead-latest-wave-of-htc-vive-stunners/">Audioshield Reference Image</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=6yMNgDloJPE">Chroma Reference Image</a></li>
+                            <li><a href="https://twitter.com/rookijeu/status/879622422193766400">Kingsman Referance Image</a></li>
+                            <li><a href="https://bootstrapious.com/p/bootstrap-sidebar">Collapsable Sidebar Tutorial</a></li>
                         </ul>
-                    </nav>
+                    </footer>
                 </div>
-            </div>
-            <div class="row align-items-end">
-                <footer class="col-12">
-                    <header>Resources</header>
-                    <ul>
-                        <li><a href="http://www.publicdomainpictures.net/view-image.php?image=230272&picture=impressionist-beach-sunset">Sunset Background</a></li>
-                        <li><a href="https://arstechnica.com/gaming/2016/01/vr-games-audioshield-hover-junkers-lead-latest-wave-of-htc-vive-stunners/">Audioshield Reference Image</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=6yMNgDloJPE">Chroma Reference Image</a></li>
-                        <li><a href="https://twitter.com/rookijeu/status/879622422193766400">Kingsman Referance Image</a></li>
-                    </ul>
-                </footer>
             </div>
         </div>
         
@@ -108,5 +111,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        
+        <!--Custsom JS
+        ------------------------------------------------------- -->
+        <script src="scripts/main.js"></script>
     </body>
 </html>

@@ -2,12 +2,15 @@ body{
     background-image: url("../images/sunset.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    text-align: center;
     font-family: 'Arbutus Slab', serif;
     color: white;
+    overflow-x: hidden;
 }
 h1,h2{
     font-family: 'Seaweed Script', cursive;
+}
+h1{
+    text-align: center;
 }
 ul{
     list-style: none;
@@ -18,6 +21,7 @@ a{
 }
 a:hover{
     color: lightgrey;
+    text-decoration: none;
 }
 a:active{
     color: white;
@@ -32,8 +36,34 @@ img{
 }
 nav{
     background-color: rgba(0,0,0,0.2);
-    text-align: left;
+    padding: 10px;
 }
-#tab{
-    float: right;
+footer ul li{
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+.wrapper{
+    display: flex;
+}
+#navButton{
+    position: sticky;
+    z-index: 2;
+}
+#collapseableNav{
+    margin-left: -250px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%;
+}
+#collapseableNav.active{
+    margin-left: 0px;
+}
+@media (max-width: 768px) {
+    #collapseableNav {
+        margin-left: -250px;
+    }
+    #collapseableNav.active {
+        margin-left: 0;
+    }
 }
