@@ -1,23 +1,29 @@
 body{
-    background-image: url("../images/sunset.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: 'Arbutus Slab', serif;
+    background-color: black;
+    font-family: 'Lato', serif;
+    font-size: 1.25em;
     color: white;
     overflow-x: hidden;
 }
-h1,h2{
-    font-family: 'Seaweed Script', cursive;
+header{
+    font-size: 8em;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    text-align: center;
 }
-h1{
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+}
+h1, nav, .col-5{
     text-align: center;
 }
 ul{
     list-style: none;
 }
 a{
-    color: black;
+    color: silver;
     text-decoration: none;
+    margin: 2em;
 }
 a:hover{
     color: lightgrey;
@@ -27,43 +33,26 @@ a:active{
     color: white;
 }
 .row{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding: 1em;
 }
 img{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
-nav{
-    background-color: rgba(0,0,0,0.2);
-    padding: 10px;
+footer{
+    margin-bottom: 0;
 }
-footer ul li{
+footer ul li, nav ul li{
     text-align: center;
     display: inline-block;
-    margin: 10px;
+    margin: auto;
 }
 .wrapper{
     display: flex;
 }
-#navButton{
-    position: sticky;
-    z-index: 2;
-}
-#collapseableNav{
-    margin-left: -250px;
-    min-width: 250px;
-    max-width: 250px;
-    height: 100%;
-}
-#collapseableNav.active{
-    margin-left: 0px;
+.inline{
+    margin: auto;
 }
 @media (max-width: 768px) {
-    #collapseableNav {
-        margin-left: -250px;
-    }
-    #collapseableNav.active {
-        margin-left: 0;
-    }
+    
 }
